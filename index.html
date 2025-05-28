@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café Kathaa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans text-gray-800">
+
+  <!-- Navbar -->
+  <header class="sticky top-0 bg-white shadow z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
+      <h1 class="text-2xl font-bold text-yellow-900">Café Kathaa</h1>
+      <nav class="space-x-6">
+        <a href="#" class="text-gray-700 hover:text-yellow-800">Home</a>
+        <a href="#menu" class="text-gray-700 hover:text-yellow-800">Menu</a>
+        <a href="#about" class="text-gray-700 hover:text-yellow-800">About</a>
+        <a href="#contact" class="text-gray-700 hover:text-yellow-800">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-[url('https://images.unsplash.com/photo-1509042239860-f550ce710b93')] bg-cover bg-center h-screen text-white flex items-center">
+    <div class="max-w-3xl mx-auto text-center backdrop-brightness-50 p-8 rounded">
+      <h2 class="text-4xl md:text-6xl font-bold mb-4">Brewed With Love,<br>Served With Soul.</h2>
+      <p class="mb-6 text-lg">Experience artisanal coffee and soulful bites at Café Kathaa.</p>
+      <a href="#menu" class="px-6 py-3 bg-yellow-600 hover:bg-yellow-700 text-white font-semibold rounded-full">Explore Menu</a>
+    </div>
+  </section>
+
+  <!-- Featured Menu -->
+  <section id="menu" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-12">Our Favorites</h3>
+      <div class="grid gap-8 grid-cols-1 md:grid-cols-3">
+        <div class="bg-white shadow rounded-xl overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" class="w-full h-52 object-cover" />
+          <div class="p-4">
+            <h4 class="text-xl font-semibold mb-2">Signature Cappuccino</h4>
+            <p class="text-sm text-gray-600">Smooth and foamy with a touch of chocolate.</p>
+          </div>
+        </div>
+        <div class="bg-white shadow rounded-xl overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1529692236671-f1c7a82d4d1e" class="w-full h-52 object-cover" />
+          <div class="p-4">
+            <h4 class="text-xl font-semibold mb-2">Spicy Paneer Sandwich</h4>
+            <p class="text-sm text-gray-600">Toasted and stuffed with flavorful paneer and veggies.</p>
+          </div>
+        </div>
+        <div class="bg-white shadow rounded-xl overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1568051243853-f126e95d51ec" class="w-full h-52 object-cover" />
+          <div class="p-4">
+            <h4 class="text-xl font-semibold mb-2">Hazelnut Cold Coffee</h4>
+            <p class="text-sm text-gray-600">Chilled, rich, and perfectly sweet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold mb-4">About Café Kathaa</h3>
+      <p class="text-gray-700 text-lg">Café Kathaa is more than just a coffee shop. It’s a cozy space where stories are shared over warm cups and delicious bites. Located in the heart of the city, we bring people together with great ambiance, handcrafted beverages, and heartfelt service.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold mb-6">Visit Us</h3>
+      <p class="text-lg mb-4">123, Main Street, Your City, India</p>
+      <p class="mb-2">Open Daily: 9 AM – 10 PM</p>
+      <p class="mb-2">Phone: +91-9876543210</p>
+      <a href="https://goo.gl/maps/example" target="_blank" class="mt-4 inline-block px-6 py-2 bg-yellow-600 hover:bg-yellow-700 text-white font-semibold rounded-full">Get Directions</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-yellow-900 text-white py-6">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p>&copy; 2025 Café Kathaa. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
