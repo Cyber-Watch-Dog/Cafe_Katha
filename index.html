@@ -5,139 +5,105 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Café Kathaa</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-    nav a.active {
-      color: #f59e0b; /* Amber 400 in Tailwind */
-      font-weight: 700;
-      border-bottom: 2px solid #f59e0b;
+    body {
+      font-family: 'Poppins', sans-serif;
     }
   </style>
 </head>
-<body class="font-sans text-gray-800">
+<body class="bg-[#fefae0] text-[#3e2c1e]">
 
   <!-- Navbar -->
-  <header class="sticky top-0 bg-white shadow z-50">
-    <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
-      <h1 class="text-2xl font-bold text-yellow-900">Café Kathaa</h1>
-      <nav class="space-x-6">
-        <a href="#" class="text-gray-700 hover:text-yellow-800">Home</a>
-        <a href="#menu" class="text-gray-700 hover:text-yellow-800">Menu</a>
-        <a href="#about" class="text-gray-700 hover:text-yellow-800">About</a>
-        <a href="#contact" class="text-gray-700 hover:text-yellow-800">Contact</a>
+  <header class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-[#6b4226]">Café Kathaa</h1>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="index.html" class="hover:text-[#6b4226]">Home</a>
+        <a href="menu.html" class="hover:text-[#6b4226]">Menu</a>
+        <a href="gallery.html" class="hover:text-[#6b4226]">Gallery</a>
+        <a href="about.html" class="hover:text-[#6b4226]">About</a>
+        <a href="contact.html" class="hover:text-[#6b4226]">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="bg-[url('https://images.unsplash.com/photo-1509042239860-f550ce710b93')] bg-cover bg-center h-screen text-white flex items-center">
-    <div class="max-w-3xl mx-auto text-center backdrop-brightness-50 p-8 rounded">
-      <h2 class="text-4xl md:text-6xl font-bold mb-4">Brewed With Love,<br>Served With Soul.</h2>
-      <p class="mb-6 text-lg">Experience artisanal coffee and soulful bites at Café Kathaa.</p>
-      <a href="#menu" class="px-6 py-3 bg-yellow-600 hover:bg-yellow-700 text-white font-semibold rounded-full">Explore Menu</a>
+  <section class="h-screen bg-cover bg-center flex items-center justify-center text-white relative" style="background-image: url('https://source.unsplash.com/1600x900/?coffee,cafe');">
+    <div class="bg-black bg-opacity-50 p-8 rounded text-center">
+      <h2 class="text-4xl md:text-6xl font-bold mb-4">Brewed with Stories</h2>
+      <p class="text-lg md:text-xl mb-6">Welcome to Café Kathaa — where every cup tells a tale.</p>
+      <a href="menu.html" class="bg-[#6b4226] hover:bg-[#5a341f] text-white px-6 py-3 rounded shadow">View Our Menu</a>
     </div>
   </section>
 
- <!-- Featured Menu -->
-<section id="menu" class="py-16 bg-gray-50">
-  <div class="max-w-7xl mx-auto px-4">
-    <h3 class="text-3xl font-bold text-center mb-12">Our Favorites</h3>
-    <div class="grid gap-8 grid-cols-1 md:grid-cols-3">
-
-      <!-- Menu Item 1 -->
-      <div class="bg-white shadow rounded-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
-        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" class="w-full h-52 object-cover" />
-        <div class="p-4">
-          <h4 class="text-xl font-semibold mb-1 flex items-center justify-between">
-            Signature Cappuccino 
-            <span class="text-yellow-600 font-bold text-lg">₹150</span>
-          </h4>
-          <p class="text-sm text-gray-600 mb-2">Smooth and foamy with a touch of chocolate.</p>
-          <span class="inline-block bg-yellow-100 text-yellow-800 px-3 py-1 text-xs font-semibold rounded-full">Chef’s Special</span>
-        </div>
-      </div>
-
-      <!-- Menu Item 2 -->
-      <div class="bg-white shadow rounded-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
-        <img src="https://images.unsplash.com/photo-1529692236671-f1c7a82d4d1e" class="w-full h-52 object-cover" />
-        <div class="p-4">
-          <h4 class="text-xl font-semibold mb-1 flex items-center justify-between">
-            Spicy Paneer Sandwich
-            <span class="text-yellow-600 font-bold text-lg">₹120</span>
-          </h4>
-          <p class="text-sm text-gray-600 mb-2">Toasted and stuffed with flavorful paneer and veggies.</p>
-          <span class="inline-block bg-green-100 text-green-800 px-3 py-1 text-xs font-semibold rounded-full">Popular</span>
-        </div>
-      </div>
-
-      <!-- Menu Item 3 -->
-      <div class="bg-white shadow rounded-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
-        <img src="https://images.unsplash.com/photo-1568051243853-f126e95d51ec" class="w-full h-52 object-cover" />
-        <div class="p-4">
-          <h4 class="text-xl font-semibold mb-1 flex items-center justify-between">
-            Hazelnut Cold Coffee
-            <span class="text-yellow-600 font-bold text-lg">₹130</span>
-          </h4>
-          <p class="text-sm text-gray-600 mb-2">Chilled, rich, and perfectly sweet.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-  <!-- About Section -->
-  <section id="about" class="py-16 bg-white">
-    <div class="max-w-5xl mx-auto px-4 text-center">
-      <h3 class="text-3xl font-bold mb-4">About Café Kathaa</h3>
-      <p class="text-gray-700 text-lg">Café Kathaa is more than just a coffee shop. It’s a cozy space where stories are shared over warm cups and delicious bites. Located in the heart of the city, we bring people together with great ambiance, handcrafted beverages, and heartfelt service.</p>
+  <!-- About Us Preview -->
+  <section class="max-w-6xl mx-auto py-16 px-4 md:flex items-center gap-10">
+    <img src="https://source.unsplash.com/600x400/?coffee,interior" class="rounded-lg w-full md:w-1/2 mb-6 md:mb-0" alt="About Café Kathaa">
+    <div class="md:w-1/2">
+      <h3 class="text-3xl font-semibold mb-4">About Us</h3>
+      <p class="mb-4">Café Kathaa is a cozy retreat in the city where stories meet sips. We serve hand-crafted coffee, delightful snacks, and a calm space to work, meet, or unwind.</p>
+      <a href="about.html" class="text-[#6b4226] font-semibold hover:underline">Learn More →</a>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-16 bg-gray-100">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <h3 class="text-3xl font-bold mb-6">Visit Us</h3>
-      <p class="text-lg mb-4">123, Main Street, Your City, India</p>
-      <p class="mb-2">Open Daily: 9 AM – 10 PM</p>
-      <p class="mb-2">Phone: +91-9876543210</p>
-      <a href="https://goo.gl/maps/example" target="_blank" class="mt-4 inline-block px-6 py-2 bg-yellow-600 hover:bg-yellow-700 text-white font-semibold rounded-full">Get Directions</a>
+  <!-- Menu Preview -->
+  <section class="bg-[#fffaf0] py-16 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+      <h3 class="text-3xl font-semibold mb-8">Our Favorites</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-4 rounded shadow">
+          <img src="https://source.unsplash.com/300x200/?latte" alt="Latte" class="rounded mb-4">
+          <h4 class="font-semibold text-lg">Classic Latte</h4>
+          <p class="text-sm">₹160</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow">
+          <img src="https://source.unsplash.com/300x200/?croissant" alt="Croissant" class="rounded mb-4">
+          <h4 class="font-semibold text-lg">Butter Croissant</h4>
+          <p class="text-sm">₹120</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow">
+          <img src="https://source.unsplash.com/300x200/?cappuccino" alt="Cappuccino" class="rounded mb-4">
+          <h4 class="font-semibold text-lg">Cappuccino</h4>
+          <p class="text-sm">₹150</p>
+        </div>
+      </div>
+      <a href="menu.html" class="mt-8 inline-block bg-[#6b4226] hover:bg-[#5a341f] text-white px-6 py-3 rounded shadow">View Full Menu</a>
+    </div>
+  </section>
+
+  <!-- Gallery Preview -->
+  <section class="max-w-6xl mx-auto py-16 px-4">
+    <h3 class="text-3xl font-semibold mb-8 text-center">Gallery</h3>
+    <div class="grid md:grid-cols-3 gap-4">
+      <img src="https://source.unsplash.com/400x300/?coffee" class="rounded shadow" alt="Gallery 1">
+      <img src="https://source.unsplash.com/400x300/?cafe" class="rounded shadow" alt="Gallery 2">
+      <img src="https://source.unsplash.com/400x300/?espresso" class="rounded shadow" alt="Gallery 3">
+    </div>
+    <div class="text-center mt-6">
+      <a href="gallery.html" class="text-[#6b4226] font-semibold hover:underline">View Full Gallery →</a>
+    </div>
+  </section>
+
+  <!-- Location -->
+  <section class="bg-[#fffaf0] py-16 px-4 text-center">
+    <h3 class="text-3xl font-semibold mb-6">Visit Us</h3>
+    <p class="mb-4">Kothrud, Pune – Near MIT College</p>
+    <div class="max-w-4xl mx-auto">
+      <iframe class="w-full h-80 rounded shadow" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.1200597736264!2d73.81287251421618!3d18.56529277255938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfc8233c2d2d%3A0x1c45e7a91e8c4d7!2sMIT%20AOE%2C%20Pune!5e0!3m2!1sen!2sin!4v1613451683049!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-yellow-900 text-white py-6">
-    <div class="max-w-7xl mx-auto px-4 text-center">
-      <p>&copy; 2025 Café Kathaa. All rights reserved.</p>
+  <footer class="bg-[#6b4226] text-white py-6 text-center">
+    <p>&copy; 2025 Café Kathaa. All rights reserved.</p>
+    <div class="mt-2 space-x-4">
+      <a href="#" class="hover:underline">Instagram</a>
+      <a href="#" class="hover:underline">Facebook</a>
+      <a href="#" class="hover:underline">WhatsApp</a>
     </div>
   </footer>
-
-  <script>
-    const sections = document.querySelectorAll('section');
-    const navLi = document.querySelectorAll('nav a');
-
-    window.addEventListener('scroll', () => {
-      let current = '';
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop - 60; // adjust if your navbar is taller
-        const sectionHeight = section.clientHeight;
-        if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
-          current = section.getAttribute('id');
-        }
-      });
-
-      navLi.forEach(li => {
-        li.classList.remove('active');
-        if (li.getAttribute('href').includes(current)) {
-          li.classList.add('active');
-        }
-      });
-    });
-  </script>
 
 </body>
 </html>
